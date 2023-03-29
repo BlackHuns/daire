@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class CircleArea {
+    public static void main (String[] args){
+        System.out.println("Ben Yarı çapı verilen dairenin çevre ve alan hesabını yapan programım.");
+        Scanner tara = new Scanner(System.in);
+        System.out.printf("Dairenin yarı çapını giriniz: ");
+        double r = tara.nextDouble();
+        double area = Math.PI * r * r;
+        double perimeter = Math.PI * 2 * r;
+        System.out.println("Dairenin alanı:" + area + " ve Dairenin çevresi:" + perimeter + " dir.");
+        System.out.printf("Dairenin hesaplanacak diliminin açısını derece cinsinden giriniz: ");
+        double angle = tara.nextDouble();
+        double angle1 = angle / 360;
+        System.out.println("Dilimin Alan:" + area*angle1 + " dir");
+    }
+}
